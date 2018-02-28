@@ -46,7 +46,7 @@ class SetOfGames:
                 # store the reward
             self._gameRewards.append(game.get_reward())
 
-            if game.get_reward() < 100:
+            if game.get_reward() < 0:
                 self.lose_time += 1
 
     def lose_prob(self):
